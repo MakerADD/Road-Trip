@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="420" viewBox="0 0 130 420" fill="none" stroke="#655737" stroke-width="1.1">
+<defs><g id="leaf"><path d="M0 0C-19-5-28-19-23-34C-7-28 2-15 0 0Z"/><path d="M0 0-19-27M-8-12-17-13M-12-19-13-26"/></g></defs>
+<path d="M65 416C40 342 91 286 62 210S37 71 72 8M59 370 25 338M60 330 94 294M69 281 31 249M62 223 96 191M51 164 23 130M53 117 92 85M62 58 38 30"/>
+<use href="#leaf" transform="translate(31 344) rotate(-30)"/><use href="#leaf" transform="translate(91 298) scale(-1 1) rotate(-12)"/><use href="#leaf" transform="translate(38 256) rotate(-25)"/><use href="#leaf" transform="translate(89 199) scale(-1 1)"/><use href="#leaf" transform="translate(30 138) rotate(-15)"/><use href="#leaf" transform="translate(84 91) scale(-1 1) rotate(-20)"/><use href="#leaf" transform="translate(45 39) rotate(-10)"/>
+<path d="M65 396 96 368M65 350 39 317M67 262 97 238M56 190 30 166M57 103 30 79M66 43 88 23"/>
+<circle cx="98" cy="364" r="4"/><circle cx="104" cy="371" r="3"/><circle cx="94" cy="374" r="3"/><circle cx="35" cy="313" r="4"/><circle cx="42" cy="308" r="3"/><circle cx="99" cy="233" r="4"/><circle cx="106" cy="238" r="3"/><circle cx="28" cy="162" r="4"/><circle cx="23" cy="169" r="3"/><circle cx="27" cy="75" r="4"/><circle cx="89" cy="19" r="3"/>
+</svg>
