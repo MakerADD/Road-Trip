@@ -6,6 +6,7 @@ try{const stored=JSON.parse(localStorage.getItem(key));if(stored?.version===1&&A
 const config=window.JOURNAL_CONFIG||{},configured=!!(config.supabaseUrl&&config.supabaseAnonKey);
 const map=window.L?L.map('map',{zoomControl:false}).setView([43,-88],5):null;
 let layers;
+window.addEventListener('atlas-open',()=>{if(map){map.invalidateSize();drawMap(true);}});
 if(map){L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);L.control.zoom({position:'bottomright'}).addTo(map);layers=L.layerGroup().addTo(map);}
 function notice(message){$('notice').textContent=message;}
 function activeTrip(){return state.trips.find(t=>t.id===tripId);}
