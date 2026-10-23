@@ -1,4 +1,4 @@
-# The Wandering Journal
+# The Accused Atlas
 
 A desktop-first, responsive shared road-trip notebook. Static HTML, CSS, native JavaScript modules and Leaflet; no build or package installation needed. Google Maps links provide driving directions. Long trips are split into overlapping segments with at most three intermediate waypoints to accommodate mobile browsers.
 
