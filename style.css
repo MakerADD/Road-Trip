@@ -47,3 +47,56 @@ input,textarea,select{background:#faf0d7b8;border-color:#b69c70;box-shadow:inset
 #pin-message{font-size:11px;min-height:15px;margin:11px 0;color:#3a2519}#book-lock button{width:100%;background:linear-gradient(#52252b,#32151c);border:1px solid #2a1116;color:#eed49e;font:16px Georgia;padding:12px;box-shadow:inset 0 1px #c49d5355}#book-lock button:hover{background:#602e35}.cover-footer{font-size:8px;letter-spacing:2px;color:#a88b59;margin:30px 0 8px}
 #close-book{color:#d8bc84;border-color:#876331;background:#1b0b0d44;font-size:11px;white-space:nowrap}
 @media(max-width:650px){#book-cover{padding:40px 28px 35px;min-height:100svh}#book-cover::before{inset:24px 20px 24px 33px;background-size:38px 250px,38px 250px}.cover-kicker{letter-spacing:1.5px;font-size:8px}.cover-content{padding-left:10px}.cover-moons{font-size:20px}.cover-invitation{font-size:13px}#close-book{padding:8px;font-size:10px}header nav{gap:9px}#book-lock{padding:18px;max-width:245px}.cover-footer{letter-spacing:1px;font-size:7px}}
+/* Small screens use pages of the atlas rather than three stacked desktop panels. */
+#mobile-navigation{display:none}
+@media(max-width:900px){
+ body:not(.book-sealed){padding:4px 4px calc(76px + env(safe-area-inset-bottom))}
+ #atlas-content header{height:auto;display:grid;grid-template-columns:1fr auto auto;gap:9px 7px;padding:12px 13px}
+ #atlas-content .brand{grid-column:1/-1;width:auto;font-size:26px;letter-spacing:-.8px}
+ #atlas-content .brand small{display:none}
+ #atlas-content header nav{gap:7px;margin:0;min-width:0}
+ #atlas-content header nav::after{display:none}
+ #atlas-content header nav button{min-height:44px;font-size:14px;padding:7px 4px}
+ #atlas-content #account{font-size:0;padding:8px;min-width:44px;min-height:44px}
+ #atlas-content #account::after{content:'Settings';font-size:11px}
+ #atlas-content #close-book{min-height:44px;font-size:11px;padding:8px}
+ #notice{font-size:11px;line-height:1.5;padding:8px 12px}
+ main{display:block;height:auto;min-width:0;border:0}
+ main>aside,main>article,main>.map-panel{display:none;width:100%;max-height:none;min-width:0}
+ body[data-mobile-panel='plans'] main>aside{display:block}
+ body[data-mobile-panel='entry'] main>article{display:block}
+ body[data-mobile-panel='map'] main>.map-panel{display:block;height:calc(100svh - 230px);min-height:320px}
+ main>aside{padding:23px 18px}main>article{padding:23px 28px}
+ #collection{max-height:34svh;overscroll-behavior:contain;gap:9px}
+ #collection .card{min-height:64px;padding:13px}
+ #itinerary{scroll-margin-top:12px}
+ .heading h1{font-size:23px;line-height:1.3;margin:0 0 12px}
+ .heading button{flex-shrink:0}
+ .stop{grid-template-columns:30px 1fr;padding:16px 0}
+ .stop-title{min-height:44px;font-size:17px;display:flex;align-items:center;width:100%}
+ .stop small{font-size:12px;line-height:1.6}
+ .stop-tools{gap:8px;margin-top:10px}
+ .stop-tools button{min-width:44px;min-height:44px;font-size:13px;padding:8px 12px}
+ .actions{gap:9px}.actions button{flex:1 1 140px;min-height:48px}
+ button.wide,#save-note{min-height:48px;font-size:15px}
+ input,textarea,select{font-size:16px;min-height:46px}
+ input[type='checkbox']{min-height:22px;min-width:22px;vertical-align:middle}
+ .detail-section p{font-size:16px;line-height:1.8}
+ .source{font-size:15px;line-height:1.5;padding:8px 0;min-height:44px}
+ .map-caption{top:10px;left:10px;right:48px;padding:9px 11px}.map-caption strong{font-size:15px}
+ .map-key{max-width:220px;bottom:24px;font-size:10px}.map-key small{font-size:10px}
+ .leaflet-touch .leaflet-bar a{width:42px;height:42px;line-height:42px}
+ #mobile-navigation{position:fixed;z-index:900;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:7px 7px calc(7px + env(safe-area-inset-bottom));background:#2c1318;border-top:2px solid #ad8548;box-shadow:0 -3px 16px #1c0b1644}
+ #mobile-navigation::after{display:none}
+ #mobile-navigation button{min-height:48px;font:14px Georgia,serif;color:#e2c58b;border:1px solid #8a6538;background:#391b20;padding:8px 3px}
+ #mobile-navigation button[aria-pressed='true']{background:#d4b67b;color:#2f1d16;border-color:#efcd88;box-shadow:inset 0 0 0 2px #8e6c3c}
+ dialog{max-height:calc(100dvh - 30px);width:calc(100% - 20px);padding:9px}dialog form{padding:8px}dialog button{min-height:44px}dialog h2{font-size:21px}
+ #book-cover{padding:28px 22px;min-height:100svh;max-width:620px}
+ #book-cover h1{font-size:clamp(36px,10vw,54px)}
+ .cover-kicker{font-size:8px;letter-spacing:1px;margin:12px 0 22px}
+ .cover-moons{margin-bottom:20px}.cover-sigil{width:65px;height:65px;font-size:45px;margin:22px auto}
+ .cover-invitation{font-size:14px;margin:20px 0}
+ #book-lock{width:100%;max-width:275px;padding:18px 19px}
+ #book-pin{font-size:29px;min-height:53px}#book-lock button{min-height:48px;font-size:17px}
+ .cover-footer{margin-top:24px;line-height:1.7}
+}
